@@ -20,4 +20,17 @@ router.get('/getUser', function(req, res, next) {
   });
 });
 
+router.post('/createUser', function(req, res, next) {
+ var email = req.body.email;
+ var password = req.body.password;
+
+ var data = {
+   email: undefined,
+   password: undefined
+ }
+
+ res.send(data);
+
+});
+
 module.exports = router;
