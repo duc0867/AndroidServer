@@ -28,6 +28,8 @@ router.post('/createUser', function(req, res, next) {
    email: undefined,
    password: undefined
  }
+ data.email = email;
+ data.password = password;
 
  res.send(data);
 
