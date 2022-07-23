@@ -20,7 +20,7 @@ router.get('/getUser', function(req, res, next) {
   });
 });
 
-router.post('/createUser', function(req, res, next) {
+router.post('/createUser', function (req, res) {
  var email = req.body.email;
  var password = req.body.password;
 
